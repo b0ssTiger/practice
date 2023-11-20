@@ -1,0 +1,32 @@
+using System;
+
+public class Solution {
+    public int solution(int angle) {
+        int answer = 0;
+        //angle 이 매개변수로 주어질 때
+        //and조건 &&  or조건 ||
+        // 예각 = 1, 직각 = 2, 둔각 = 3 , 평각 = 4 
+        if(angle < 90 && 0 < angle)
+        {
+            
+            answer = 1; 
+        
+        }
+        else if(angle == 90) // == 같다 부호  
+        {
+            answer = 2;
+            
+        }
+        else if(90 < angle && angle < 180)
+        {
+            answer = 3;
+            
+        } 
+        else //조건x 
+        {
+            answer = 4;
+            
+        }    
+        return answer;
+    }
+}     
